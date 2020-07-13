@@ -10,6 +10,7 @@ const server = require('browser-sync').create();
 const svgstore = require('gulp-svgstore');
 const posthtml = require('gulp-posthtml');
 const include = require('posthtml-include');
+const rigger = require('gulp-rigger');
 const run = require('run-sequence');
 const del = require('del');
 const uglify = require('gulp-uglify');
@@ -38,15 +39,28 @@ gulp.task('style', () => gulp.src('source/sass/style.scss')
   .pipe(server.stream())
 );
 
-gulp.task('js', () => gulp.src(['source/js/**/*.js', '!source/js/vendor/*.js'])
+// gulp.task('js:copy',() => gulp.src('src/js/**/*.js')
+//     .pipe(newer('build/js'))
+//     .pipe(gulp.dest('build/js'));
+// });
+//
+// gulp.task('js:include', () => gulp.src('src/js/**/*.js')
+//     .pipe(plumber())
+//     .pipe(include())
+//     .pipe(gulp.dest('build/js'))
+// });
+
+
+gulp.task('js', () => gulp.src('source/js/**/*.js')
   .pipe(plumber())
-  .pipe(concat('main.js'))
+  //.pipe(concat('main.js'))
+  .pipe(rigger())
   .pipe(gulp.dest('build/js/'))
 );
 
-gulp.task('jsPlugins', () => gulp.src(['source/js/vendor/*.js'])
+gulp.task('jsPlugins', () => gulp.src('source/js/**/*.js')
   .pipe(plumber())
-  .pipe(concat('vendor.js'))
+   .pipe(rigger())
   .pipe(gulp.dest('build/js/'))
 );
 
