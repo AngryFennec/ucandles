@@ -1,0 +1,126 @@
+.header {
+    &__logo {
+        position: relative;
+        z-index: 2;
+    }
+    &__container {
+        max-width: 1310px;
+        padding: 16px 15px 10px 15px;
+        margin: 0 auto;
+    }
+    &__row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__menu {
+        margin-top: -54px;
+        min-height: 54px;
+    }
+
+    &__menu-list {
+        @include list-reset;
+        display: flex;
+        width: 100%;
+        padding-top: 11px;
+    }
+
+    &__item {
+        margin-right: 24px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--search {
+            margin-left: auto;
+            margin-right: 48px;
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 24px;
+            display: block;
+        }
+
+        & span {
+            display: none;
+        }
+    }
+
+    &__card {
+        padding-right: 12px;
+        margin-left: 24px;
+        padding-top: 11px;
+        position: relative;
+
+        & span {
+            position: absolute;
+            display: block;
+            background-color: $biege;
+            top: 7px;
+            right: 5px;
+            border-radius: 50%;
+            width: 14px;
+            height: 14px;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 14px;
+            text-align: center;
+        }
+    }
+
+    &__menu-wrapper {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .header__menu-wrapper {
+        position: absolute;
+        outline: 1px solid red;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .header__item--search {
+        margin-left: 0;
+    }
+
+    .header__menu-list {
+        flex-direction: column;
+    }
+
+    .header__card {
+        margin-left: auto;
+        margin-top: 13px;
+        margin-right: 12px;
+    }
+
+    .header__menu {
+        display: flex;
+    }
+
+    .header__burger {
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+}
+
+@media(max-width: 375px) {
+    .header {
+        padding-top: 15px;
+    }
+
+    .header__burger {
+        padding-left: 15px;
+        padding-top: 25px;
+    }
+
+    .header__card {
+        margin-right: 5px;
+    }
+}
