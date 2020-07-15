@@ -1,0 +1,41 @@
+.burger {
+    display: none;
+    
+    &__button {
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+        position: relative;
+        background: transparent;
+    }
+
+    &__top {
+        position: absolute;
+        width: 18px;
+        top: 7px;
+        left: 3px;
+        height: 1px;
+        background: $text;
+        // transform: rotate(30deg);
+        // transform-origin: left top;
+    }
+
+    &__bottom {
+        position: absolute;
+        width: 18px;
+        top: 16px;
+        left: 3px;
+        height: 1px;
+        background: $text;
+        // transform: rotate(-30deg);
+        // transform-origin: left bottom;
+    }
+}
+
+@media(max-width: 1024px) {
+    .burger {
+        display: block;
+    }
+}
