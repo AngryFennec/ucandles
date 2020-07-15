@@ -1,0 +1,19 @@
+.button {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid black;
+
+    &--up {
+        color: $brown;
+        border-color: $brown;
+
+        & img {
+            margin-left: 7px;
+        }
+    }
+}
