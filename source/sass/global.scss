@@ -22,8 +22,9 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 138%;
-cursor: none;
+  background-color: $back-light;
   color: $text;
+  font-family: $roboto;
 }
 
 a {
@@ -44,13 +45,3 @@ a {
   overflow: hidden;
 }
 
-.rub {
-  font-family: 'ASLRubl';
-}
-
-
-@media(max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-}
