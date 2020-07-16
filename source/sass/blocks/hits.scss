@@ -1,0 +1,19 @@
+.hits {
+  padding-top: 126px;
+  padding-bottom: 175px;
+  background-color: $light;
+}
+
+.hits__container {
+  padding: 0 40px;
+}
+
+.hits__title {
+  text-align: center;
+}
+
+.hits__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

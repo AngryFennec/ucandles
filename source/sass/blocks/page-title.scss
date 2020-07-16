@@ -1,0 +1,17 @@
+.page-title {
+  margin: 0;
+  font-family: "Blacker", "Times New Roman", serif;
+  font-size: 70px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  color: $text;
+
+  @media (max-width: $laptop-width - 1) {
+    font-size: 92px;
+  }
+
+  @media (max-width: $tablet-width - 1) {
+    font-size: 50px;
+  }
+}
