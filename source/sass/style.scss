@@ -1,6 +1,7 @@
 /* Плагины */
 @import "plugins/normalize";
 @import "plugins/fancybox";
+@import "plugins/swiper";
 
 /* Общие */
 @import "functions";
@@ -16,5 +17,4 @@
 @import "blocks/header";
 @import "blocks/burger";
 @import "blocks/footer";
-
-
+@import "blocks/aroma";
