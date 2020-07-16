@@ -1,0 +1,98 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 456px;
+  height: 512px;
+  padding: 40px;
+  text-decoration: none;
+  background-color: $light;
+
+  @media (max-width: $laptop-width - 1) {
+    width: 324px;
+    height: 362px;
+    padding: 0;
+  }
+
+  @media (max-width: $tablet-width - 1) {
+    width: 285px;
+    height: 317px;
+  }
+
+  @media (max-width: $mobile-width - 1) {
+    width: 100%;
+    height: 317px;
+  }
+
+  &__img {
+    width: 220px;
+    height: 236px;
+
+    @media (max-width: $laptop-width - 1) {
+      width: 168px;
+      height: 180px;
+    }
+
+    @media (max-width: $tablet-width - 1) {
+      width: 143px;
+      height: 153px;
+    }
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+
+    @media (max-width: $laptop-width - 1) {
+      padding: 26px;
+    }
+
+    @media (max-width: $tablet-width - 1) {
+      padding: 44px 0 24px;
+    }
+
+    & h3 {
+      margin: 0;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 27px;
+      color: $dark;
+      text-align: center;
+
+      @media (max-width: $laptop-width - 1) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      @media (max-width: $tablet-width - 1) {
+        line-height: 24px;
+      }
+    }
+
+    & span {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 27px;
+      color: $dark;
+      text-align: center;
+
+      @media (max-width: $laptop-width - 1) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      @media (max-width: $tablet-width - 1) {
+        line-height: 24px;
+      }
+    }
+  }
+}

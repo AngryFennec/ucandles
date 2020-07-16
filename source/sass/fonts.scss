@@ -2,7 +2,8 @@
     font-family: "Blacker";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/Blacker-Display-Regular-trial.ttf") format("truetype");
+    src: url("../fonts/Blacker/BlackerProDisplayTrial-Regular.woff2") format("woff2"),
+    url("../fonts/Blacker/BlackerProDisplayTrial-Regular.woff") format("woff");
     font-display: swap;
 }
 
