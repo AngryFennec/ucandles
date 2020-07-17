@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<include src="source/components/head.html"></include>
+
+<body>
+  <include src="source/components/header.html"></include>
+  <main>
+
+    <section class="hits">
+      <div class="hits__container container">
+        <h2 class="hits__title section-title">Хиты продаж</h2>
+        <include src="source/components/cards-slider.html"></include>
+        <div class="hits__bottom">
+          <a href="#" class="hits__button button button--right button--brown">
+            Все хиты
+            <img src="img/sprite/arrow-right.svg" alt="стрелка">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="hits">
+      <div class="hits__container container">
+        <h2 class="hits__title section-title">Новинки</h2>
+        <include src="source/components/cards-slider.html"></include>
+        <div class="hits__bottom">
+          <a href="#" class="hits__button button button--right button--brown">
+            Все новинки
+            <img src="img/sprite/arrow-right.svg" alt="стрелка">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <include src="source/components/footer.html"></include>
+  <include src="source/components/scripts.html"></include>
+</body>
+
+</html>
