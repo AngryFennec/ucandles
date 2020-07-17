@@ -1,0 +1,27 @@
+.manufacture {
+  &__text {
+    font-family: Blacker Display;
+font-style: normal;
+font-weight: normal;
+font-size: 42px;
+line-height: 66px;
+text-align: center;
+color: #3A1307;
+margin: 0;
+margin-bottom: 64px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1248px;
+    margin: 0 auto;
+  padding-top: 235px;
+  padding-bottom: 240px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
