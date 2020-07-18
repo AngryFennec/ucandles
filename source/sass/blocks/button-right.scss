@@ -1,0 +1,29 @@
+.button-right {
+  display: inline-flex;
+  padding-left: 20px;
+  padding-right: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  align-items: center;
+  color: $brown-dark;
+  border-bottom: 1px solid $dark;
+  transition: all 0.2s;
+
+  & img {
+    margin-left: 10px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $brown;
+  }
+
+  &--dark {
+    color: $dark;
+  }
+}
