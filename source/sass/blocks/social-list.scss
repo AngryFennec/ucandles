@@ -3,6 +3,10 @@
     display: flex;
 
     & li {
-        margin-right: 12px;
+        margin-right: 10px;
+    }
+
+    & a {
+        display: block;
     }
 }

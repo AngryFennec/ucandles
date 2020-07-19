@@ -31,4 +31,26 @@
   &--dark {
     color: $dark;
   }
+
+  &--light {
+    color: $biege;
+    border-color: $biege;
+
+    & svg {
+      margin-left: 10px;
+    }
+
+    & .button-right__arrow {
+      stroke: $biege; 
+    }
+
+    &:hover {
+      color: $brown;
+      border-color: $brown;
+
+      & .button-right__arrow {
+        stroke: $brown; 
+      }
+    }
+  }
 }

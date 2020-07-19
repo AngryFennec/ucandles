@@ -31,4 +31,12 @@
     &--brown {
       color: $brown-dark;
     }
+
+    &--light {
+      color: $biege;
+      border-color: $biege;
+      & .button-right__arrow {
+        stroke: $biege; 
+      }
+    }
 }
