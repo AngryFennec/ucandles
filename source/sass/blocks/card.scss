@@ -7,6 +7,12 @@
   height: 464px;
   background-color: $light;
 
+  &.swiper-slide {
+    & .card__link {
+      cursor: url(../img/sprite/eyecursor.svg) 14 8.75,auto;
+    }
+  }
+
   @media (max-width: $desktop-min-width) {
     width: 408px;
     height: 447px;
