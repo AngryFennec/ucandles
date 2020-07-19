@@ -27,6 +27,11 @@
             transition: all 0.4s;
             color: $brown-dark;
         }
+        
+        & .footer__info a:hover {
+            transition: all 0.4s;
+            color: $brown-dark;;
+        }
     }
 
     &--white {
@@ -53,6 +58,11 @@
         & .footer__contacts a:hover {
             transition: all 0.4s;
             color: $brown-dark;
+        }
+
+        & .footer__info a:hover {
+            transition: all 0.4s;
+            color: $brown-dark;;
         }
     }
 
