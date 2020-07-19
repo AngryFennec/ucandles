@@ -1,18 +1,20 @@
 .card {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  width: 456px;
-  height: 512px;
-  padding: 40px;
-  text-decoration: none;
+  align-items: flex-end;
+  justify-content: center;
+  width: 416px;
+  height: 464px;
   background-color: $light;
+
+  @media (max-width: $desktop-min-width) {
+    width: 408px;
+    height: 447px;
+  }
 
   @media (max-width: $laptop-width - 1) {
     width: 324px;
     height: 362px;
-    padding: 0;
   }
 
   @media (max-width: $tablet-width - 1) {
@@ -21,13 +23,29 @@
   }
 
   @media (max-width: $mobile-width - 1) {
+    width: 288px;
+    height: 312px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     width: 100%;
-    height: 317px;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  &__img-wrapper {
+    position: relative;
   }
 
   &__img {
     width: 220px;
     height: 236px;
+    object-fit: cover;
+    object-position: center;
 
     @media (max-width: $laptop-width - 1) {
       width: 168px;
@@ -38,26 +56,48 @@
       width: 143px;
       height: 153px;
     }
+  }
 
-    & img {
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
+  &__hover {
+    transition: all 0.2s;
+    opacity: 0;
+  }
+
+  &__img-hover {
+    position: absolute;
+    left: -60%;
+    bottom: -20%;
+    width: 248px;
+    height: 226px;
+
+    @media (max-width: $laptop-width - 1) {
+      display: none;
     }
   }
 
   &__description {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding-top: 46px;
+    padding-bottom: 10px;
     align-items: center;
 
+    @media (max-width: $desktop-min-width) {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+
     @media (max-width: $laptop-width - 1) {
-      padding: 26px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
     @media (max-width: $tablet-width - 1) {
       padding: 44px 0 24px;
+    }
+
+    @media (max-width: $mobile-width - 1) {
+      padding: 42px 0 22px;
     }
 
     & h3 {
@@ -69,7 +109,6 @@
       text-align: center;
 
       @media (max-width: $laptop-width - 1) {
-        font-size: 16px;
         line-height: 26px;
       }
 
@@ -94,5 +133,76 @@
         line-height: 24px;
       }
     }
+  }
+
+  &__cart {
+    position: absolute;
+    bottom: 100px;
+    right: 62px;
+    width: 57px;
+    height: 57px;
+    padding: 0;
+    color: $brown-dark;
+    background-color: $white;
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    @media (max-width: $laptop-width - 1) {
+      bottom: 116px;
+      right: 40px;
+      opacity: 1;
+    }
+
+    @media (max-width: $tablet-width - 1) {
+      bottom: 111px;
+      right: 31px;
+    }
+
+    @media (max-width: $mobile-width - 1) {
+      bottom: 99px;
+      right: 36px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: $brown-dark;
+      border: 1px solid $brown-dark;
+      color: $white;
+    }
+  }
+
+  &__like {
+    @include btn-reset;
+    position: absolute;
+    top: 41px;
+    right: 80px;
+    color: #a8a8a8;
+    cursor: pointer;
+
+    @media (max-width: $laptop-width - 1) {
+      display: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      color: $text;
+
+      & svg {
+        fill: $text;
+      }
+    }
+  }
+}
+
+.card:hover {
+  & .card__hover {
+    opacity: 1;
   }
 }
