@@ -11,6 +11,11 @@
   border-bottom: 1px solid $dark;
   transition: all 0.2s;
 
+  @media (max-width: $tablet-width - 1) {
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
   & img {
     margin-left: 10px;
   }

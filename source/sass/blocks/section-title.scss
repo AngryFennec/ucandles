@@ -8,12 +8,8 @@
   color: $text;
 
   @media (max-width: $desktop-min-width) {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 56px;
-
-    &--min {
-      font-size: 36px;
-    }
   }
 
   @media (max-width: $laptop-width - 1) {
