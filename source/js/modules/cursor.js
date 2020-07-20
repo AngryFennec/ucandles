@@ -37,3 +37,10 @@
   });
 
 })();
+// $(".slider-top__tooltip").mousemove(function (evt) {
+//   var hovertext = $(this).attr("data-title");
+//   $(".page-main__hovertitle").text(hovertext).show();
+//   $(".page-main__hovertitle").css("top", evt.clientY + 12).css("left", evt.clientX + 12);
+// }).mouseout(function () {
+//   $(".page-main__hovertitle").hide();
+// });

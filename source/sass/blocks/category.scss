@@ -1,0 +1,43 @@
+.category {
+  padding: 220px 0 300px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 85%;
+  }
+
+  &__link {
+    position: relative;
+    padding: 12px 44px;
+    margin: 0 44px;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      display: block;
+      width: 6px;
+      height: 6px;
+      background-color: $text;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:first-child,
+    &:nth-child(2n + 4) {
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__img {
+    display: none;
+  }
+}
