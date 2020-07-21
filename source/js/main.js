@@ -2,3 +2,4 @@
 //= modules/aroma-slider.js
 //= modules/hits-swiper.js
 //= modules/cursor.js
+//= modules/category.js
