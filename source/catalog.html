@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<include src="source/components/head.html"></include>
+
+<body>
+  <include src="source/components/cursor.html"></include>
+  <include src="source/components/header.html"></include>
+  <main class="main-page main-page--white">
+    <div class="main-page__top">
+      <div class="main-page__container container">
+        <h1 class="main-page__title page-title">Каталог</h1>
+      </div>
+    </div>
+
+    <section class="catalog-filter">
+      <div class="catalog-filter__top">
+        <div class="catalog-filter__container container">
+          <ul class="catalog-filter__option-list">
+            <li class="catalog-filter__option-item">
+              <span class="catalog-filter__number">1</span>
+              <a href="#" class="catalog-filter__option-link">Продукция</a>
+            </li>
+            <li class="catalog-filter__option-item">
+              <a href="#" class="catalog-filter__option-link">Аромат</a>
+            </li>
+            <li class="catalog-filter__option-item">
+              <span class="catalog-filter__number">3</span>
+              <a href="#" class="catalog-filter__option-link">Настроение</a>
+            </li>
+            <li class="catalog-filter__option-item">
+              <a href="#" class="catalog-filter__option-link">Время использования</a>
+            </li>
+            <li class="catalog-filter__option-item">
+              <a href="#" class="catalog-filter__option-link">По популярности</a>
+            </li>
+          </ul>
+          <button type="button" class="catalog-filter__button">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#close"/>
+            </svg>
+            Очистить
+          </button>
+        </div>
+      </div>
+      <div class="catalog-filter__dropdown">
+        <div class="catalog-filter__dropdown-container container">
+          <form action="#" class="catalog-filter__form">
+            <ul class="catalog-filter__value-list">
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-1">
+                <label for="product-1">Свечи серии Bocal</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-2">
+                <label for="product-2">Свечи серии Verre</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-3">
+                <label for="product-3">Свечи серии Chakras</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-4">
+                <label for="product-4">Свечи серии Spa</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-5">
+                <label for="product-5">Свечи серии Votiv</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-6">
+                <label for="product-6">Все свечи</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-7">
+                <label for="product-7">Диффузеры</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-8">
+                <label for="product-8">Парфюм</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-9">
+                <label for="product-9">Автопарфюм</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-10">
+                <label for="product-10">Тарталетки</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-11">
+                <label for="product-11">Бомбочки для ванн</label>
+              </li>
+              <li class="catalog-filter__value-item">
+                <input type="checkbox" name="product" id="product-12">
+                <label for="product-12">Аксессуары</label>
+              </li>
+            </ul>
+        </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-catalog">
+      <div class="main-catalog__container container">
+        <ul class="main-catalog__list">
+          <li class="main-catalog__item card">
+            <include src="source/components/catalog-item.html"></include>
+          </li>
+          <li class="main-catalog__item card">
+            <include src="source/components/catalog-item.html"></include>
+          </li>
+          <li class="main-catalog__item card">
+            <include src="source/components/catalog-item.html"></include>
+          </li>
+          <li class="main-catalog__item card">
+            <include src="source/components/catalog-item.html"></include>
+          </li>
+          <li class="main-catalog__item card">
+            <include src="source/components/catalog-item.html"></include>
+          </li>
+          <li class="main-catalog__item card">
+            <include src="source/components/catalog-item.html"></include>
+          </li>
+          <li class="main-catalog__item card">
+            <include src="source/components/catalog-item.html"></include>
+          </li>
+          <li class="main-catalog__item card">
+            <include src="source/components/catalog-item.html"></include>
+          </li>
+          <li class="main-catalog__item card">
+            <include src="source/components/catalog-item.html"></include>
+          </li>
+        </ul>
+        <a href="#" class="main-catalog__button button-right">
+          Показать больше
+          <img src="img/sprite/arrow-right.svg" alt="стрелка">
+        </a>
+      </div>
+    </section>
+  </main>
+  <include src="source/components/footer.html"></include>
+  <include src="source/components/scripts.html"></include>
+</body>
+
+</html>
